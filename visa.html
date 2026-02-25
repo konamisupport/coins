@@ -26,8 +26,8 @@
         body::before {
             content: '';
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             background: #3b82f6;
             filter: blur(150px);
             opacity: 0.2;
@@ -38,8 +38,9 @@
 
         .visa-card {
             background: var(--card-gradient);
-            width: 420px;
-            padding: 35px;
+            width: 320px;
+            height: 280px;
+            padding: 25px;
             border-radius: 24px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             color: white;
@@ -68,8 +69,8 @@
         }
 
         .chip {
-            width: 55px;
-            height: 42px;
+            width: 40px;
+            height: 30px;
             background: var(--accent-gold);
             border-radius: 8px;
             position: relative;
@@ -99,7 +100,7 @@
         }
 
         .input-group {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .input-group label {
@@ -142,18 +143,21 @@
         }
 
         .btn-submit {
-            width: 100%;
-            background: white;
-            color: #0f172a;
-            border: none;
-            padding: 16px;
-            border-radius: 14px;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
-        }
+    width: 50%;
+    display: block;      /* Required for margin: auto to work */
+    margin: 0 auto;      /* Centers the button horizontally */
+    
+    background: white;
+    color: #0f172a;
+    border: none;
+    padding: 10px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
 
         .btn-submit:hover {
             background: #f8fafc;
@@ -193,7 +197,7 @@
 <body>
 
 <div class="visa-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="visa-logo" alt="Visa">
+   
     <div class="chip-container">
         <div class="chip"></div>
         <svg class="contactless" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/></svg>
