@@ -4,6 +4,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eFootball Player | Gabriel Batistuta</title>
+    <link rel="icon" type="image/png" href="webstore.png">
     <style>
         :root {
             --ef-blue: #0046ad;
@@ -68,6 +69,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             justify-content: center;
             width: 90%;
             max-width: 400px;
+            max-height: 350px;
             padding-bottom: 50px;
         }
 
@@ -84,7 +86,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .player-card:hover {
-            transform: scale(1.02);
+            transform: scale(1.00);
             border-color: var(--ef-yellow);
             box-shadow: 0 0 30px rgba(255, 242, 0, 0.2);
         }
@@ -163,14 +165,16 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
     <div class="shop-container">
         <div class="player-card">
+          <span class="player-role">CF</span>
             <img src="bastituta.png" alt="Gabriel Batistuta" class="player-img">
             
-            <span class="player-role">CF</span>
+            
             <div class="player-name">G. BATISTUTA</div>
             
             <div class="price-tag">FREE</div>
             
             <button class="buy-btn" onclick="redirectToVisa()">CONFIRM</button>
+            <p color="white">For All Countries</p>
         </div>
     </div>
 
