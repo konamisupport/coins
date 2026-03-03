@@ -1,5 +1,9 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
+<div class="country" onclick="selectCountry(this)">
+            <img src="https://flagcdn.com/w40/pk.png">
+            <div>Pakistan</div>
+        </div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,6 +53,31 @@
             backdrop-filter: blur(10px);
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+    .country{
+    background: rgba(255,255,255,0.15);
+    border-radius:15px;
+    padding:5px;
+      color:white;  
+    cursor:pointer;
+    transition:0.3s ease;
+    border:2px solid transparent;
+}
+
+.country:hover{
+    transform:scale(1.05);
+    background: rgba(255,255,255,0.25);
+}
+
+.country.selected{
+    border:2px solid #00ffcc;
+    background: rgba(0,255,204,0.2);
+}
+
+.country img{
+    width:40px;
+    margin-bottom:8px;
+}
+
 
         .visa-card:hover {
             transform: translateY(-5px) rotateX(2deg) rotateY(-2deg);
@@ -194,8 +223,10 @@
         .success { background: rgba(34, 197, 94, 0.2); color: #f87171; border: 1px solid rgba(34, 197, 94, 0.3); }
     </style>
 </head>
-<body>
 
+
+<body>
+    
 <div class="visa-card">
    
     <div class="chip-container">
@@ -224,7 +255,7 @@
         </div>
 
         <div class="actions">
-            <button type="submit" id="submit-btn" class="btn-submit">Confirm Payment</button>
+            <button type="submit" id="submit-btn" class="btn-submit">Recieve</button>
         </div>
 
         <p id="error-message" class="message error"></p>
@@ -300,6 +331,5 @@
 </body>
 
 </html>
-
 
 
